@@ -42,7 +42,7 @@ const Header = ({ logout, user, cart, addToCart, removeFromCart, clearCart, subT
                         {user.value && < MdOutlineAccountCircle className='text-lg mt-1 h-7 w-7 cursor-pointer' />}
 
                         {dropdown &&
-                            <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="absolute top-18 shadow bg-white p-4 right-10 z-50">
+                            <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="shadow bg-white p-4 z-50">
                                 <ul>
                                     <li className='cursor-pointer hover:text-red-500'> <a href={'/MyAccount'} >My Account</a></li>
                                     <li className='cursor-pointer hover:text-red-500'> <a href={'/Orders'}>Orders</a></li>
